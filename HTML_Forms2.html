@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML FORMS2</title>
+</head>
+<body>
+    <h1> MINING DEPARTMENT</h1>
+    <form action="thankyou.html" method="GET">  <!-- POST Method can also be used-->
+        <label for="USERNAME">USERNAME</label>
+        <input type="text" id="USERNAME" name="USERNAME"> <br> <br>
+
+        <label for="PASSWORD">PASSWORD</label>
+        <input type="PASSWORD" id="PASSWORD" name="PASSWORD"> <br> <br>
+
+        <label for="G-MAIL">G-MAIL</label>
+        <input type="G-MAIL" id="G-MAIL" name="PASSWORD"> <br> <br>
+
+        <input type="submit" value="SIGNIN">
+
+    </form>
+
+<!-- action,method,name ==> its related to backend-->
+<!-- 1ST CREATED THANKYOU.HTML FILE IN SAME LOCATION OF HTML_FORMS2 .-->
+<!-- I HAVE TAKEN  ==>  ACTION ATTRIBUTE WHICH TAKES NAME OF FILE WHICH WE CREATED 1ST.-->
+<!-- when we run observe url link there we can observe that we can see userame given ,same for password
+       and g-mail   see below the lik-->
+<!-- http://localhost:63342/Html_Forms.html/thankyou.html?USERNAME=SHUBHAM&PASSWORD=12345&PASSWORD=XYZ%40GMAIL.COM-->
+<!-- in g-mail we see ====> XYZ%40GMAIL.COM   ==> %40 means=> @,  and %20 means ==> space-->
+<!-- GET METHOD Means ==> HTTP VERB     it pass some data through URL and gives us-->
+<!-- IN ACTION WE GIVE ==>  Django scripi, php script, nodejs script.For eg.=> SO AFTER LOGIN the coding what has done in
+      tahnkyou.html get execute.-->
+<!-- WE CAN ASLO USE "POST"METHOD-->
+<!-- "POST"METHOD GIVES US LINK AS==>  http://localhost:63342/Html_Forms.html/thankyou.html-->
+<!-- EVERY METHOD HAS ITS OWN ADVANTAGE AND DIS-ADVANTAGES-->
+</body>
+</html>
