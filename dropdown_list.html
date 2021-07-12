@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML FORMS2</title>
+</head>
+<body>
+    <h1> MINING DEPARTMENT</h1>
+    <form>
+        <label for="USERNAME">USERNAME</label>
+        <input type="text" id="USERNAME" placeholder="USERNAME"  Required> <br> <br>
+
+        <label for="PASSWORD">PASSWORD</label>
+        <input type="PASSWORD" id="PASSWORD"  placeholder="PASSWORD" Required> <br> <br>
+
+        <label for="G-MAIL">G-MAIL</label>
+        <input type="G-MAIL" id="G-MAIL"  placeholder="G-MAIL" Required> <br> <br>
+
+        <p> Please select gender</p>
+        <label for="MALE">MALE</label>
+        <input type="Radio" name="Gender" id="MALE" value="MALE"> <br>
+
+<!--we put => name="gender" bcoz whe we select male and again select female then only one is selected not two-->
+<!--we put VALUE attribute bcoz to send this forms data in dackend -->
+
+        <label for="FEMALE">FEMALE</label>
+        <input type="Radio" name="Gender" id="FEMALE" value="FEMALE"> <br>
+
+        <label for="other">other</label>
+        <input type="Radio" name="Gender" id="other" value="other"> <br> <br>
+
+        <label for="age">Select your age group</label>
+        <select name="" id="age">
+            <option value="5-20"> 5-20</option>
+            <option value="20-30"> 20-30</option>
+            <option value="30-40"> 30-40</option>
+            <option value="40-50"> 40-50</option>
+            <option value="50-60"> 50-60</option>
+            <option value="60+"> 60+</option>
+        </select> <br> <br>
+
+<!-- label tag is same BUT =>  PUT SELECT tag for dropdown list-->
+<!--when we fill form that data goes in backend. now, i want to send value
+     so values goes in "name" parameter -->
+<!--use method="GET" & action="thankyou.html" here we have to create html file thankyou.html and
+    whatever we have done coding in thankyou.html get execute when we fill the form and press login button
+    it will ope the output of thankyou.html file. -->
+        <input type="submit" value="SIGNIN">
+
+    </form>
+</body>
+</html>
+
+<!-- USING PLACEHOLDER ATTRUBUTE ==>IT SHOWS NAME OF TAB INSIDE BOX-->
+<!-- rEQUIRED ATTRIBUTE ==> when we fill username password and we don't fill g-mail then it will show that
+      this field is required.-->
+<!--
+<form>
+    <p>Contact Us</p>
+    <textarea name="" id=" cols="30" rows="10" placeholder='type here'></textarea>
+</form> -->
